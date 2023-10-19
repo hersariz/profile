@@ -1,0 +1,75 @@
+.data {
+
+  padding: 15px;
+}
+
+/* CSS untuk garis hitam */
+table {
+  border-collapse: collapse;
+  width: 30%;
+  padding: 10px;
+}
+
+/* Efek hover pada baris tabel */
+tr:hover {
+  background-color: orange; /* Ubah warna latar belakang saat hover */
+}
+
+th,
+td {
+  border-bottom: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+}
+
+.foto_mahasiswa {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: -190px;
+  margin-bottom: 0px;
+  padding-right: 240px;
+  padding-bottom: 0px;
+}
+
+.foto_mahasiswa img {
+  border-radius: 10px;
+  /* Foto Biar keliatan melengkung cuy */
+}
+
+button {
+  background-color: aquamarine;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.biodata {
+  transition: background-color 0.3s ease; /* Transisi untuk efek hover */
+  border-radius: 10px;
+}
+
+.biodata:hover {
+  background-color: lightgrey; /* Ubah warna latar belakang saat hover */
+}
+
+/* CSS untuk tablet dan mobile */
+@media (max-width: 768px) {
+  table {
+    max-width: 100%;
+    width: 20%;
+    /* Agar tabel mengisi lebar layar pada tablet dan mobile */
+  }
+
+  .foto_mahasiswa {
+    margin-top: -250px;
+    /* Atur margin atas yang lebih kecil untuk tablet dan mobile */
+    padding-right: 0px;
+    padding-top: 0%;
+    margin-right: -450px;
+  }
+
+  button {
+    margin-top: 60px;
+  }
+}

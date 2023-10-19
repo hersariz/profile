@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profil</title>
+  <link rel="stylesheet" href="data.css" />
+  <style>
+    /* Menggunakan CSS untuk menerapkan gaya pada teks */
+    .bold-text {
+      font-weight: bold;
+      /* Membuat teks menjadi bold */
+      font-size: larger
+    }
+
+    .red-text {
+      color: rgb(107, 67, 216);
+      /* Memberikan warna merah pada teks */
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Data Mahasiswa -->
+  <div class="data">
+    <h2 >Data Mahasiswa </h2>
+    <table>
+      <tr>
+        <th align="left">NPM :</th>
+        <td> 22.01.53.0044</td>
+      </tr>
+      <tr>
+        <th align="left">Nama :</th>
+        <td> Hersa rizky syahputra</td>
+      </tr>
+      <tr>
+        <th align="left">Program :</th>
+        <td> Reguler / Kelas Pagi</td>
+      </tr>
+      <tr>
+        <th align="left">Program Studi :</th>
+        <td> Teknik Informatika</td>
+      </tr>
+    </table>
+  </div>
+  <!-- Data Mahasiswa End -->
+
+  <!-- Foto Mahasiswa -->
+  <div class="foto_mahasiswa">
+    <img src="pp hrs.jpeg" width="150px" height="200px" margin le/>
+    
+
+  </div>
+  <!-- Foto Mahasiswa End -->
+
+  <!-- Button -->
+  <button>Pribadi</button>
+  <button>Alamat Tetap</button>
+  <button>Orang Tua</button>
+  <button>Asal Sekolah</button>
+  <!-- Button End -->
+  <br>
+  <br>
+  <!-- Biodata -->
+  <div class="biodata">
+    <p><span class="bold-text">Silahkan lengkapi semua isian data diri.</span> Pastikan data sesuai dengan KTP/Ijazah
+      atau identitas resmi lain.</p>
+    <p><span class="red-text">Data ini akan dilaporkan ke Direktorat jendral perguruan tinggi Republik Indonesia.
+        Kesalahan pengisian data bukan tanggung jawab lembaga.</span></p>
+  </div>
+  <br>
+  <tr>
+    <form action="proses_data.php" method="post" enctype="multipart/form-data">
+      <label for="nama">Nama:</label>
+      <input type="text" id="nama" name="nama" value="Hersa rizky syahputra" required /><br /><br />
+
+      <label for="tempat_lahir">Tempat Lahir:</label>
+      <input type="text" id="tempat_lahir" name="tempat_lahir" value="SEMARANG" required /><br /><br />
+
+      <label for="tanggal_lahir">Tanggal Lahir:</label>
+      <input type="text" id="tanggal_lahir" name="tanggal_lahir" value="26 sep 2003" required /><br /><br />
+
+      <label for="warga_negara">Warga Negara:</label>
+      <input type="radio" id="wn_indonesia" name="warga_negara" value="Indonesia" checked />
+      Indonesia
+      <input type="radio" id="wn_asing" name="warga_negara" value="Warga Negara Asing" />
+      Warga Negara Asing<br /><br />
+
+      <label for="nama_ibu">Nama Ibu:</label>
+      <input type="text" id="nama_ibu" name="nama_ibu" value="" required /><br /><br />
+
+      <label for="no_ktp">No KTP Mahasiswa:</label>
+      <input type="text" id="no_ktp" name="no_ktp" value="" required /><br /><br />
+
+      <label for="nisn">NISN:</label>
+      <input type="text" id="nisn" name="nisn" value="" required /><br /><br />
+
+      <label for="jenis_kelamin">Jenis Kelamin:</label>
+      <select id="jenis_kelamin" name="jenis_kelamin">
+        <option value="Pria" selected>PRIA</option>
+        <option value="Wanita">WANITA</option>
+      </select><br /><br />
+
+      <label for="agama">Agama:</label>
+      <select id="agama" name="agama">
+        <option value="Islam" selected>ISLAM</option>
+        <option value="Kristen">KRISTEN</option>
+        <option value="Hindu">HINDU</option>
+        <option value="Buddha">BUDDHA</option>
+        <option value="Lainnya">LAINNYA</option>
+      </select><br /><br />
+
+      <label for="gol_darah">Golongan Darah:</label>
+      <input type="text" id="gol_darah" name="gol_darah" value="A" required /><br /><br />
+
+      <label for="status_sipil">Status Sipil:</label>
+      <select id="status_sipil" name="status_sipil">
+        <option value="Belum Menikah" selected>BELUM MENIKAH</option>
+        <option value="Menikah">MENIKAH</option>
+      </select><br /><br />
+
+      <label for="alamat">Alamat:</label>
+      <textarea id="alamat" name="alamat" required>
+kawung II no 50</textarea><br /><br />
+
+      <label for="rt">RT:</label>
+      <input type="text" id="rt" name="rt" value="004" required /><br /><br />
+
+      <label for="rw">RW:</label>
+      <input type="text" id="rw" name="rw" value="011" required /><br /><br />
+
+      <label for="kota">Kota:</label>
+      <input type="text" id="kota" name="kota" value="KOTA SEMARANG" required /><br /><br />
+
+      <label for="kode_pos">Kode Pos:</label>
+      <input type="text" id="kode_pos" name="kode_pos" value="50187" required /><br /><br />
+
+      <label for="kelurahan">Kelurahan:</label>
+      <input type="text" id="kelurahan" name="kelurahan" value="TLOGOSARI" required /><br /><br />
+
+      <label for="kecamatan">Kecamatan:</label>
+      <input type="text" id="kecamatan" name="kecamatan" value="PEDURUNGAN" required /><br /><br />
+
+      <label for="provinsi">Propinsi:</label>
+      <input type="text" id="provinsi" name="provinsi" value="JAWA TENGAH" required /><br /><br />
+
+      <label for="negara">Negara:</label>
+      <input type="text" id="negara" name="negara" value="INDONESIA" required /><br /><br />
+
+      <label for="telepon">Telepon:</label>
+      <input type="text" id="telepon" name="telepon" value="0811713482916" required /><br /><br />
+
+      <label for="hp">HP:</label>
+      <input type="text" id="hp" name="hp" value="081231712687" required /><br /><br />
+
+      <label for="email">E-mail:</label>
+      <input type="email" id="email" name="email" value="HersaRIZ@gmail.com" required /><br /><br />
+
+      <label for="foto">Pas Foto Berwarna:</label>
+      <input type="file" id="foto" name="foto" accept=".jpg" required /><br /><br />
+
+      <label for="foto_wisudawan">Foto Calon Wisudawan:</label>
+      <input type="file" id="foto_wisudawan" name="foto_wisudawan" accept=".jpg" required /><br /><br />
+
+      <label for="scan_ktp_kk">Scan KTP/KK:</label>
+      <input type="file" id="scan_ktp_kk" name="scan_ktp_kk" accept=".jpg" required /><br /><br />
+
+      <label for="scan_ijazah_sma">Scan Ijazah SMA:</label>
+      <input type="file" id="scan_ijazah_sma" name="scan_ijazah_sma" accept=".jpg" required /><br /><br />
+
+      <label for="scan_ijazah_akhir">Scan Ijazah Akhir:</label>
+      <input type="file" id="scan_ijazah_akhir" name="scan_ijazah_akhir" accept=".jpg" required /><br /><br />
+
+      <label for="scan_transkrip_akhir">Scan Transkrip Akhir:</label>
+      <input type="file" id="scan_transkrip_akhir" name="scan_transkrip_akhir" accept=".jpg" required /><br /><br />
+
+      <input type="submit" value="Submit" />
+    </form>
+    <!-- Biodata End -->
+
+    <script src="tambahDikit.js"></script>
+  </tr>
+</body>
+
+</html>
